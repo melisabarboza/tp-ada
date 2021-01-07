@@ -57,7 +57,6 @@ public class CursoMenu {
 		String nombreCurso = sc.next();
 		Curso curso = new Curso(nombreCurso);
 		CursoDAO.insert(curso, connection);
-
 	}
 
 	public static void submenuCurso(Scanner sc, Connection connection) throws SQLException {

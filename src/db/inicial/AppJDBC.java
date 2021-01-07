@@ -10,10 +10,6 @@ import db.inicial.menu.CursoMenu;
 import db.inicial.menu.InscripcionMenu;
 import db.inicial.menu.ProfesorMenu;
 
-// Menu: 1.cursos 2:alumnos 3:inscripciones
-// Necesitamos alta, listado, modificacion y baja de alumno, curso y profesor
-// Inscripcion, cancelacion, listados (varios)
-
 public class AppJDBC {
 
 	public static void main(String[] args) {

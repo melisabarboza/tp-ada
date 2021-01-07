@@ -66,10 +66,10 @@ public class InscripcionMenu {
 			break;
 		case 0:
 			System.out.println("Seleccionaste la opcion salir");
-			System.out.println("Gracias por utilizar nuestra plataforma ");// salir
+			System.out.println("Gracias por utilizar nuestra plataforma ");
 			break;
 		default:
-			System.out.println("Opcion invalida "); // opción invalida / no encontrada
+			System.out.println("Opcion invalida ");
 		}
 
 	}
@@ -78,13 +78,11 @@ public class InscripcionMenu {
 		System.out.println("Ingrese ID de curso a buscar:");
 		int idCurso = sc.nextInt();
 		List<Alumno> listado = AlumnoDAO.findAlumnosByIdCurso(idCurso, sc, connection);
-		// imprimir listado de alumnos
 		System.out.println("Listado de alumnos: " + listado);
 	}
 
 	private static void listarNotasDeInscripcionDelAlumnoEnUnCurso(Scanner sc, Connection connection)
 			throws SQLException {
-		// pedir int idAlumno, int idCurso,
 		System.out.println("Ingrese ID del curso");
 		int idCurso = sc.nextInt();
 
@@ -92,7 +90,6 @@ public class InscripcionMenu {
 		int idAlumno = sc.nextInt();
 
 		List<Integer> listNotas = InscripcionDAO.findByNotasDeInscripcion(idCurso, idAlumno, sc, connection);
-		// imprimir listado de notas
 		System.out.println("Listado de notas: " + listNotas);
 	}
 
@@ -133,7 +130,7 @@ public class InscripcionMenu {
 		}
 	}
 
-	private static void altaInscripcion(Scanner sc, Connection connection) throws SQLException { // ALTA INSCRIPCION
+	private static void altaInscripcion(Scanner sc, Connection connection) throws SQLException {
 		System.out.println("Alta de inscripcion");
 		System.out.println();
 		System.out.println("Ingrese ID alumno:");
