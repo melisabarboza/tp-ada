@@ -1,3 +1,9 @@
 # Trabajo Practico Nº 2
-Implemento Crud Repository para Alumnos, Profesores, Cursos, Inscripciones
+App JDBC
+DAO
+MENU
+MODEL
+
+Alumnos, profesores, inscripciones, cursos.
+
 Java Backend 
